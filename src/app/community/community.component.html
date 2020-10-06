@@ -1,0 +1,21 @@
+<div class="bgColor container">
+    <h1>Healthy Me Community</h1>
+    <h3>Comments</h3>
+    <table>   
+         <tbody>        
+             <tr *ngFor="let comm of comments">            
+                 <p>
+                     {{comm.commenter}} said:      {{comm.comment}}     
+                </p>    
+                
+            </tr>    
+        </tbody>     
+    </table>
+    <br/>
+    <div class="form-inline form-group">           
+        <input class="form-control" type="text" placeholder="new comment" />&nbsp;&nbsp;        
+        <button class="btn btn-primary ">Submit</button>
+    </div>
+    <br/>
+</div>
+
